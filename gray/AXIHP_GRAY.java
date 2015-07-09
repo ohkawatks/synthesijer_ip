@@ -1,6 +1,7 @@
 import synthesijer.lib.axi.*;
 import synthesijer.rt.*;
 
+@synthesijerhdl
 class AXIHP_GRAY {
     private final AXILiteSlave32RTL s0 = new AXILiteSlave32RTL();
     private final SimpleAXIMemIface32RTLTest m0 = 
