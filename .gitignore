@@ -7,6 +7,7 @@ dump000.xml
 
 #Synthesijer products
 ip/
+tgz/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
