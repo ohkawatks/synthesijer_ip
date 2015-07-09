@@ -39,3 +39,6 @@ After the build, you will find IP dir looks like below:
 - AXIHP_GRAY_v1_0
 
 Copy the entire IP dir into your IP repository for Xilinx Vivado, and add reference in the repository setting.
+
+## License
+The IP is distributed under the modified BSD license.
