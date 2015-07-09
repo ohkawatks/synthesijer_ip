@@ -25,7 +25,7 @@ ip:
 		$(SRCS)
 
 	cp $(HDL_SRCS) $(TARGET_IP)/src/
-	tar zcvf ../$(TARGET_IP).tgz $(TARGET_IP)
+	tar zcvf ../ip/$(TARGET_IP).tgz $(TARGET_IP)
 
 clean:
 	rm -rf *~ *.txt *.dot *.class dump*.xml
@@ -34,6 +34,6 @@ cleanall: clean
 	rm -rf *.vhd $(TARGET_IP)
 
 tar: cleanall
-	cd ..; tar zcvf $(TARGET).tgz $(TARGET)
+	cd ..; tar zcvf tgz/$(TARGET).tgz $(TARGET)
 
 
