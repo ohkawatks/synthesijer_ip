@@ -29,9 +29,13 @@ To build IP, cd into the ip project dir and make. For example, in the case of bu
     cd gray
     make
  
+Then, you can find AXIHP_GRAY_v1_0 dir in the current dir, and AXIHP_GRAY_v1_0.tgz in the ../ip dir.
+
 To make tarball,
 
     make tar
+
+Then, you can find gray.tgz in the ../tgz dir.
 
 ## How to use the IP
 After the build, you will find IP dir looks like below:
