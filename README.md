@@ -9,9 +9,9 @@ Setup Synthesijer environment following the instruction below:
 - https://github.com/synthesijer
 
 ## How to build
-To build IP, cd into the ip project dir and make. For example, in the case of building aftrans (Affine Transform),
+To build IP, cd into the ip project dir and make. For example, in the case of building "gray" (Gray filter),
 
-    % cd aftrans
+    % cd gray
     % make
  
 To make tarball,
