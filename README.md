@@ -8,7 +8,7 @@ To build IP, cd into the ip project dir and make. For example, in the case of bu
     % cd aftrans
     % make
  
-To make tar ball,
+To make tarball,
 
     % make tar
 
