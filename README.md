@@ -1,7 +1,8 @@
 # synthesijer_ip
 Copyright 2015 Takeshi Ohkawa
 
-Hardwired IPs written in Java for synthesijer 
+Hardwired AXI-IPs written in Java for synthesijer.
+These IPs are mainly intended to be used in Xilinx Zynq platform.
 
 ## Setup 
 Setup Synthesijer environment following the instruction below:
