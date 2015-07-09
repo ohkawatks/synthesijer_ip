@@ -24,6 +24,7 @@ ip:
 		$(SRCS)
 
 	cp $(HDL_SRCS) $(TARGET_IP)/src/
+	mkdir -p ../ip
 	tar zcvf ../ip/$(TARGET_IP).tgz $(TARGET_IP)
 
 clean:
@@ -33,6 +34,6 @@ cleanall: clean
 	rm -rf *.vhd $(TARGET_IP)
 
 tar: cleanall
-	cd ..; tar zcvf tgz/$(TARGET).tgz $(TARGET)
+	cd ..; mkdir -p tgz; tar zcvf tgz/$(TARGET).tgz $(TARGET)
 
 
