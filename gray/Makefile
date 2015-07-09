@@ -3,7 +3,7 @@ TARGET_IP_NAME=AXIHP_GRAY
 TARGET_IP_VERSION=v1_0
 TARGET_IP=$(TARGET_IP_NAME)_$(TARGET_IP_VERSION)
 
-SRCS=		\
+SRCS=		$(TARGET_IP_NAME).java \
                 $(SYNTHESIJER_EXTRA_LIB)/src/synthesijer/lib/axi/AXILiteSlave32RTL.java \
                 $(SYNTHESIJER_EXTRA_LIB)/src/synthesijer/lib/axi/SimpleAXIMemIface32RTL.java \
                 $(SYNTHESIJER_EXTRA_LIB)/src/synthesijer/lib/axi/SimpleAXIMemIface32RTLTest.java
@@ -21,7 +21,6 @@ ip:
 	java -cp $(SYNTHESIJER):$(SYNTHESIJER_EXTRA_LIB)/bin:. \
 		synthesijer.Main \
 		--ip-exact=$(TARGET_IP_NAME) \
-		$(TARGET_IP_NAME).java \
 		$(SRCS)
 
 	cp $(HDL_SRCS) $(TARGET_IP)/src/
@@ -34,7 +33,6 @@ cleanall: clean
 	rm -rf *.vhd $(TARGET_IP)
 
 tar: cleanall
-	make ip; make cleanall;
 	cd ..; tar zcvf tgz/$(TARGET).tgz $(TARGET)
 
 
