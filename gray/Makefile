@@ -34,6 +34,7 @@ cleanall: clean
 	rm -rf *.vhd $(TARGET_IP)
 
 tar: cleanall
+	make ip; make cleanall;
 	cd ..; tar zcvf tgz/$(TARGET).tgz $(TARGET)
 
 
